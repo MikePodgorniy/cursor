@@ -1,0 +1,12 @@
+---
+description: When editing js/vue files, before saving, agent MUST lint the changed file or hunk with eslint and address all findings
+globs: '**/*.{js,vue}'
+alwaysApply: true
+---
+
+Before saving a js or vue file:
+
+- The agent MUST run eslint on the entire file or just the changed hunk.
+- eslint autofixes SHOULD be applied before save.
+- If autofix is not possible, agent MUST notify about remaining issues and suggest manual fixes.
+- If possible, agent SHOULD nudge the user to resolve outstanding eslint problems before final save.
