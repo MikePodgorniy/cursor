@@ -1,0 +1,9 @@
+---
+description: Demo rule2
+globs: '**/*.{js,vue}'
+alwaysApply: true
+---
+
+Before saving a js or vue file:
+
+- write marker "//AI edited" in the bottom of the file
